@@ -1,0 +1,61 @@
+@import "./variables";
+@import "./mixins";
+.advice-container{
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid $Dark-Grayish-Blue;
+    background-color: $Dark-Grayish-Blue;
+    text-align: center;
+    position: relative;
+    border-radius: 7px;
+    @include respond(phone){
+        width: 350px;
+    }
+    @include respond(mini-phone){
+        width: 280px;
+    }
+    & h2{
+        margin-top: 55px;
+        color: $Neon-Green;
+        font-size: 16px;
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+    }
+    & p {
+        color: $Light-Cyan;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__pattern-divider{
+        background-image: url(../../public/images/pattern-divider-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 20px;
+        background-repeat: no-repeat;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 60px;
+    }
+    &__green-circle{
+        width: 60px;
+        height: 60px;
+        background-color: $Neon-Green;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateY(50%) translateX(-50%);
+        cursor: pointer;
+        &:hover, &:active{
+            box-shadow: $Neon-Green 0px 0px 40px;
+        }
+        & img{
+            display: inline-block;
+            margin-top: 18px;
+            
+        }
+    }
+}
