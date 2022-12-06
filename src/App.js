@@ -19,6 +19,7 @@ function App() {
 
 
   return (
+    <>
     <div className="advice-container">
       <h2>ADVICE #  {data.id}</h2>
       <p>❝{data.advice}❞</p>
@@ -27,6 +28,11 @@ function App() {
         <img src="/images/icon-dice.svg" alt="" />
       </div>
     </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="/" >Zaza Mirotadze</a>.
+    </div>
+    </>
   );
 }
 
